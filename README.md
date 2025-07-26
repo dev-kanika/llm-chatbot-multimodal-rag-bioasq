@@ -11,7 +11,6 @@ All models are built using data from the **BioASQ dataset**, retrieved from Hugg
 ```python
 df = pd.read_parquet("hf://datasets/rag-datasets/rag-mini-bioasq/data/passages.parquet/part.0.parquet")
 df = pd.read_parquet("hf://datasets/rag-datasets/rag-mini-bioasq/data/test.parquet/part.0.parquet")
-## 🔧 Approaches Implemented
 ```
 ---
 
