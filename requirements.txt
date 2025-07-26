@@ -1,0 +1,35 @@
+# Core NLP & Transformers
+transformers>=4.40.0
+sentence-transformers>=2.2.2
+datasets>=2.19.0
+torch>=2.1.2
+peft>=0.9.0
+accelerate>=0.28.0
+
+# Vector DB & RAG
+faiss-cpu>=1.7.4
+langchain>=0.1.0
+langchain-community>=0.0.30
+langchain_groq
+groq
+
+# Evaluation
+rouge-score>=0.1.2
+bert-score>=0.3.13
+
+# Utilities
+tqdm>=4.66.1
+python-dotenv>=1.0.0
+scikit-learn>=1.4.1
+pandas>=2.2.2
+numpy>=1.26.4
+
+# Optional but recommended
+nltk>=3.8.1
+tokenizers>=0.15.2
+ipykernel
+jupyter
+
+# Advanced Usage
+dspy-ai
+huggingface_hub
