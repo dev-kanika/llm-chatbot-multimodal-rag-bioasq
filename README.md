@@ -1,4 +1,4 @@
-# 🧠 Multi-Approach LLM Chatbot for Biomedical Q&A (BioASQ)
+# 🧠 Multi-Approach LLM Chatbot for Biomedical Q&A
 
 A powerful **multimodal chatbot** system trained on biomedical data using five distinct large language modeling techniques. This project demonstrates and compares various **retrieval and generative models** from causal transformers to RAG pipelines with query rewriting—to build a robust, domain-safe question-answering assistant.
 
@@ -40,13 +40,13 @@ df = pd.read_parquet("hf://datasets/rag-datasets/rag-mini-bioasq/data/test.parqu
 
 ## 📈 Model Performance
 
-| Model                   | ROUGE-L | BERT-F1 | MAP (RAG) | MRR (RAG) |
-|-------------------------|---------|---------|-----------|-----------|
-| Causal Transformer      | 0.35    | 0.41    | —         | —         |
-| RAG (no rewrite)        | 0.48    | 0.52    | 0.61      | 0.66      |
-| PEFT (TinyLLaMA)        | 0.45    | 0.49    | —         | —         |
-| RAG + Gemma Rewrite     | 0.51    | 0.56    | 0.65      | 0.69      |
-| Prompt Engineering      | 0.43    | 0.50    | —         | —         |
+| Model                   | ROUGE-L | BERT-F1 | MAP (RAG) | MRR (RAG) |  AUC |
+|-------------------------|---------|---------|-----------|-----------|------|
+| Causal Transformer      | 0.60    | 0.95    | —         | —         | 0.80 |
+| RAG (no rewrite)        | 0.48    | 0.79    | 0.61      | 0.66      | 0.87 |
+| PEFT (TinyLLaMA)        | 0.26    | 0.86    | —         | —         | —    |
+| RAG + Gemma Rewrite     | 0.74    | 0.79    | 0.65      | 0.69      | —    |
+| Prompt Engineering      | 0.42    | 0.94    | —         | —         | 0.87 |
 
 > 🔍 _Evaluation performed using ROUGE-L, BERT-F1, and retrieval metrics (MAP, MRR)._
 
